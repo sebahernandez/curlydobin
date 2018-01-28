@@ -1,0 +1,199 @@
+   
+
+    h2{
+        font-size: 3rem;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    strong{
+
+        color:white;
+        font-size: 1.3rem;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+
+    .front{
+
+        
+       /* background:url(img/fondo.jpg);*/
+       background: #CB356B;  /* fallback for old browsers */
+       background: -webkit-linear-gradient(to right, #BD3F32, #CB356B);  /* Chrome 10-25, Safari 5.1-6 */
+       background: linear-gradient(to right, #BD3F32, #CB356B); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+       
+       
+
+    }
+  
+    .front_intro{
+        height:100vh;
+           
+    }
+
+    .front_intro h1{
+      
+        font-size: 3.5rem;
+        color: white;
+    }
+
+    .font_intro{
+         color: white;
+    }
+
+   .navbar-light{
+  
+       background: rgba(55, 71, 79, 0.267);
+   }
+
+    .navbar-brand{
+
+        font-family: 'Satisfy', cursive;
+        font-size: 3rem;
+        color: white;
+    }
+    
+  
+    .navbar {
+        padding: 0 3%;
+      
+    }
+
+    .navbar-nav a{
+        font-size: 1.2rem;
+    }
+
+    /*.navbar-nav a:visited{
+        color: white !important;
+    }
+*/
+    .navbar-nav a:hover{
+
+        color: rgb(238, 238, 238) !important;
+   
+    }
+
+
+    .nav-item a:hover{
+
+        position:relative;
+        border-bottom:1px solid rgb(255, 255, 255);
+
+    }
+
+    .navbar-nav ul li a, li a:visited {
+        color: white !important;
+    }
+
+    .movil-app{
+
+        position: absolute;
+        bottom: 0px;
+        left: 20px;
+ 
+    }
+
+    .navbar-light .navbar-toggler{
+
+        border: none;
+        padding: 20px;
+    }
+
+    .navbar-light .navbar-toggler-icon{
+
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 0.9)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+    }
+    
+    /* TABLAS */
+    
+    .card-body {
+        -ms-flex: 1 1 auto;
+        flex: 1 1 auto;
+        padding: 1.25rem;
+    }
+
+    .card-outline-primary{
+        border: solid 1px #8f00ff;
+    }
+    .sticky-navigation{
+        top: -100px;
+    }
+    .bg-alt {
+        background-color: rgb(255, 145, 0);
+    }
+    .bg-faded{
+        background-color: #EDECEC;
+    }
+    .bg-grey{
+        background-color: #F9F9FA;
+    }
+    .bg-primary{
+        background-color: #8f00ff !important;
+    }
+    .text-faded {
+        color: #EDECEC;
+    }
+    .text-dark {
+        color: #37474F;
+    }
+    .text-muted{
+        color: rgb(206, 206, 206) !important;
+    }
+    .text-primary {
+        color: #8f00ff !important;
+    }
+    .btn {
+        text-transform: uppercase;
+        font-size: 14px;
+        font-weight: 500;
+    }
+    .btn-white {
+        color: #8f00ff;
+        background-color: #fff;
+        border-color: #fff;
+    }
+    .btn-white:hover {
+        background: transparent !important;
+        color: #fff !important;
+    }
+    .btn-primary{
+        background-color: #8f00ff !important;
+        border-color: #8f00ff !important;
+    }
+    .btn-radius{
+        border-radius: 50px;
+    }
+    .border-none{
+        border: none !important;
+        border-color: transparent !important;
+    }
+    .border-bottom{
+        border-bottom: 1px solid #DEE5E5 !important;
+    }
+    /*
+    Pricing tables
+    */
+    .pricing-list{
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+    .pricing-list li {
+        font-size: 16px;
+        font-weight: normal;
+        margin-bottom: 15px;
+    }
+ /* TABLAS */
+
+    /* estilos moviles */
+
+    @media only screen and (max-width: 767px) and (min-width: 320px){
+ 
+   
+
+    .movil-app {
+        position: absolute;
+        bottom: 0px;
+        left: 20px;
+        width: 388px;
+        top: -100px;
+    }
+}

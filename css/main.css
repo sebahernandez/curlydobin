@@ -1,4 +1,17 @@
    
+    body { position : relative ; 
+
+    } 
+   
+   ul{
+        list-style: none;
+    }
+    
+    section{
+
+        
+    }
+
 
     h2{
         font-size: 3rem;
@@ -21,8 +34,7 @@
        background: -webkit-linear-gradient(to right, #BD3F32, #CB356B);  /* Chrome 10-25, Safari 5.1-6 */
        background: linear-gradient(to right, #BD3F32, #CB356B); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
        
-       
-
+    
     }
   
     .front_intro{
@@ -42,7 +54,7 @@
 
    .navbar-light{
   
-       background: rgba(55, 71, 79, 0.267);
+       background: rgba(117, 0, 0, 0.616);
    }
 
     .navbar-brand{
@@ -75,8 +87,7 @@
 
     .nav-item a:hover{
 
-        position:relative;
-        border-bottom:1px solid rgb(255, 255, 255);
+        color: gold;
 
     }
 
@@ -181,7 +192,13 @@
         font-weight: normal;
         margin-bottom: 15px;
     }
- /* TABLAS */
+
+
+  
+ 
+
+
+
 
     /* estilos moviles desde 320 */
 
@@ -191,8 +208,20 @@
     .movil-app {
         position: absolute;
         bottom: 0px;
-        left: 20px;
-        width: 388px;
-        top: -170px;
+        left: 55px;
+        width: 300px;
+        top: -200px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px){
+ 
+
+    .movil-app {
+        position: absolute;
+        bottom: 0px;
+        left: -330px;
+        width: 743px;
+        top: -190px;
     }
 }

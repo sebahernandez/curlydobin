@@ -4,40 +4,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/main.css">
     <link href="https://fonts.googleapis.com/css?family=Shrikhand" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet">
     <title>Curly Dobin - Agencia de diseño y desarrollo de Apps Móviles y Sitios Webs.</title>
     
-</head>
-<body>
 
-        <nav class="navbar navbar-toggleable-md  navbar-light fixed-top ">
+    <!-- SCROOL -->
+    <script src="js/smooth-scroll.min.js"></script>
+    <script>
+            var scroll = new SmoothScroll('a[href*="#"]', {
+            // Selectors
+            ignore: '[data-scroll-ignore]', // Selector for links to ignore (must be a valid CSS selector)
+            header: null, // Selector for fixed headers (must be a valid CSS selector)
+        
+            // Speed & Easing
+            speed: 800, // Integer. How fast to complete the scroll in milliseconds
+            offset: 0, // Integer or Function returning an integer. How far to offset the scrolling anchor location in pixels
+            easing: 'easeInOutCubic', // Easing pattern to use
+            customEasing: function (time) {}, // Function. Custom easing pattern
+        
+            // Callback API
+            before: function () {}, // Callback to run before scroll
+            after: function () {} // Callback to run after scroll
+             });
+    </script>
+
+</head>
+<body body data-spy="scroll" data-target="#menu">
+
+        <nav class="navbar navbar-toggleable-md navbar-light fixed-top" id="menu">
             <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
             <a class="navbar-brand" href="#" style="color:white;">Curly Dobin</a>
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
-              <ul class="navbar-nav ml-auto">
-                <li class="nav-item active">
-                  <a class="nav-link" href="#">Inicio<span class="sr-only">(current)</span></a>
+              <ul class="navbar-nav ml-auto nav-pills">
+                <li class="nav-item">
+                  <a class="nav-link active" data-scroll href="#Inicio">Inicio<span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Servicios</a>
+                  <a class="nav-link" data-scroll href="#servicios">Servicios</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Valores</a>
+                  <a class="nav-link" data-scroll href="#valores">Valores</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Contacto</a>
+                    <a class="nav-link" data-scroll href="#">Contacto</a>
                   </li>
                 
               </ul>
             </div>
           </nav>
 
-<section class="front">
+<section class="front" id="Inicio">
       
     <div class="container">
             
@@ -58,7 +80,7 @@
    
 </section>
 
-<section style="background: gold;">
+<section style="background: gold;" id="servicios">
 <div class="container">
 <div class="row" style="height:100vh;">
           
@@ -71,16 +93,19 @@
 
             <div class="col-md-6 d-flex align-items-center">
 
-                <div> <h2>Tus clientes más conectados contigo</h2>
-                    <p>Creamos sitios web desde cero, implementando las mejores herramientas que te ayudaran a potenciar tu negocio en internet
-                  sacale partido a tu sistema, por que sera único y pensado en ti.
-                        <br>
-                        Realizamos sistemas para la gestión de tiendas virtuales con pago en linea o formulario de cotizaciones, 
-                        Controla el acceso de administradores y vendedores.
+                <div> <h2>Desarrollo de aplicaciones móviles hibridas.</h2>
+                    <p>Diseñamos tu app móvil a medida, implementando las mejores herramientas que te ayudaran a potenciar tu negocio en internet
+                  sacandole el máximo partido a tu sistema único y pensado en ti.
+                      
+                        <p>Tiendas virtuales auto-administrables con sistema de autogestión de productos y cátalogo, con pago en linea, formulario de cotizaciones, 
+                    administración de pedidos y envios.</p>
                     </p>
-
-                    <i class="fa-li fa fa-check-square"></i>List icons
-                    <i class="fa-li fa fa-check-square"></i>List icons
+                    <ul class="list-unstyled">
+                   <li><i class="fa fa-check" aria-hidden="true"></i> Integramos Transbank.</li> 
+                   <li> <i class="fa fa-check" aria-hidden="true"></i> Soporte Premium.</li>
+                   <li><i class="fa fa-check" aria-hidden="true"></i> Mayor Seguridad.</li>
+                    <li><i class="fa fa-check" aria-hidden="true"></i> Correos Corporativos.</li>
+                    </ul>
                 </div>
                
              </div>
@@ -90,68 +115,66 @@
 </section>
 
 
-<section style="background:rgb(236, 236, 236);">
-        <div class="container">
-         <div class="row text-center front_intro pt-5">
-                <div class="col-sm-4 mt-5">
-                    <div class="card card-outline-primary">
-                        <div class="card-body">
-                            <h5 class="card-title pt-4 text-orange">WEB BASICO</h5>
-                            <h3 class="card-title text-primary pt-4 "><sup>Desde</sup> 9 UF + Iva</h3>
-                            <p class="card-text text-muted pb-3 border-bottom ">Pago único</p>
-                            <ul class="list-unstyled pricing-list">
-                                <li>Diseño Web Responsive</li>
-                                <li><b>5</b> Cuentas de correo</li>
-                                <li><b>5</b> Enlaces a contenido</li>
-                                <li>Creación de cuentas de correo</li>
-                                <li>Sitio en HTML/CSS</li>
-                                <li>Google Anlytics instalado</li>
-                            </ul>
-                            <a href="#" class="btn btn-primary btn-radius">Comprar Ahora</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-4 mt-2 wow fadeIn">
-                    <div class="card card-outline-primary bg-primary text-white">
-                        <div class="card-body">
-                            <h5 class="card-title pt-4 text-white">WEB PROFESIONAL</h5>
-                            <h3 class="card-title text-orange pt-4"><sup>Desde</sup> 30 UF + Iva</h3>
-                            <p class="card-text text-muted pb-3 border-bottom">5 UF.- | Soporte Mensual</p>
-                            <ul class="list-unstyled pricing-list">
-                                    <li>Diseño Web Responsive</li>
-                                    <li>Soporte 60 días (gratis)</li>
-                                    <li>Sistema de compras online</li>
-                                    <li>Carro de compras</li>
-                                    <li><b>10</b> Enlaces a contenido</li>
-                                    <li>Creación de cuentas de correo</li>
-                                    <li>Sitio en HTML/CSS/JS/PHP</li>
-                                    <li>Google Anlytics instalado</li>
-                            </ul>
-                            <a href="#" class="btn btn-white btn-radius">Comprar Ahora</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-4 mt-5 wow fadeIn">
-                    <div class="card card-outline-primary">
-                        <div class="card-body">
-                            <h5 class="card-title pt-4 text-orange">WEB STANDARD</h5>
-                            <h3 class="card-title text-primary pt-4"><sup>Desde</sup> 15 UF + Iva</h3>
-                            <p class="card-text text-muted pb-3 border-bottom ">Pago único</p>
-                            <ul class="list-unstyled pricing-list">
-                                <li><b>1</b> Dominio .cl</li>
-                                <li><b>20</b> Cuentas de correo</li>
-                                <li><b>10</b> Enlaces a contenido</li>
-                                <li><b>Ilimitado</b> Espacio Web</li>
-                                <li><b>Ilimitado</b> Transferencia</li>
-                                <li><b>24/7</b> Soporte 60 días</li>
-                            </ul>
-                            <a href="#" class="btn btn-primary btn-radius">Comprar Ahora</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+<div class="container" id="valores">
+    <div class="row text-center front_intro pt-5">
+           <div class="col-sm-4 mt-5">
+               <div class="card card-outline-primary">
+                   <div class="card-body">
+                       <h5 class="card-title pt-4 text-orange">WEB BASICO</h5>
+                       <h3 class="card-title text-primary pt-4 "><sup>Desde</sup> 9 UF + Iva</h3>
+                       <p class="card-text text-muted pb-3 border-bottom ">Pago único</p>
+                       <ul class="list-unstyled pricing-list">
+                           <li>Diseño Web Responsive</li>
+                           <li><b>5</b> Cuentas de correo</li>
+                           <li><b>5</b> Enlaces a contenido</li>
+                           <li>Creación de cuentas de correo</li>
+                           <li>Sitio en HTML/CSS</li>
+                           <li>Google Anlytics instalado</li>
+                       </ul>
+                       <a href="#" class="btn btn-primary btn-radius">Comprar Ahora</a>
+                   </div>
+               </div>
+           </div>
+           <div class="col-sm-4 mt-2 wow fadeIn">
+               <div class="card card-outline-primary bg-primary text-white">
+                   <div class="card-body">
+                       <h5 class="card-title pt-4 text-white">WEB PROFESIONAL</h5>
+                       <h3 class="card-title text-orange pt-4"><sup>Desde</sup> 30 UF + Iva</h3>
+                       <p class="card-text text-muted pb-3 border-bottom">5 UF.- | Soporte Mensual</p>
+                       <ul class="list-unstyled pricing-list">
+                               <li>Diseño Web Responsive</li>
+                               <li>Soporte 60 días (gratis)</li>
+                               <li>Sistema de compras online</li>
+                               <li>Carro de compras</li>
+                               <li><b>10</b> Enlaces a contenido</li>
+                               <li>Creación de cuentas de correo</li>
+                               <li>Sitio en HTML/CSS/JS/PHP</li>
+                               <li>Google Anlytics instalado</li>
+                       </ul>
+                       <a href="#" class="btn btn-white btn-radius">Comprar Ahora</a>
+                   </div>
+               </div>
+           </div>
+           <div class="col-sm-4 mt-5 wow fadeIn">
+               <div class="card card-outline-primary">
+                   <div class="card-body">
+                       <h5 class="card-title pt-4 text-orange">WEB STANDARD</h5>
+                       <h3 class="card-title text-primary pt-4"><sup>Desde</sup> 15 UF + Iva</h3>
+                       <p class="card-text text-muted pb-3 border-bottom ">Pago único</p>
+                       <ul class="list-unstyled pricing-list">
+                           <li><b>1</b> Dominio .cl</li>
+                           <li><b>20</b> Cuentas de correo</li>
+                           <li><b>10</b> Enlaces a contenido</li>
+                           <li><b>Ilimitado</b> Espacio Web</li>
+                           <li><b>Ilimitado</b> Transferencia</li>
+                           <li><b>24/7</b> Soporte 60 días</li>
+                       </ul>
+                       <a href="#" class="btn btn-primary btn-radius">Comprar Ahora</a>
+                   </div>
+               </div>
+           </div>
+       </div>
+   </div>
 
 
 

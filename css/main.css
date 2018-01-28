@@ -183,17 +183,16 @@
     }
  /* TABLAS */
 
-    /* estilos moviles */
+    /* estilos moviles desde 320 */
 
     @media only screen and (max-width: 767px) and (min-width: 320px){
  
-   
 
     .movil-app {
         position: absolute;
         bottom: 0px;
         left: 20px;
         width: 388px;
-        top: -100px;
+        top: -170px;
     }
 }

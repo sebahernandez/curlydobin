@@ -23,7 +23,7 @@
             // Speed & Easing
             speed: 800, // Integer. How fast to complete the scroll in milliseconds
             offset: 0, // Integer or Function returning an integer. How far to offset the scrolling anchor location in pixels
-            easing: 'easeInOutCubic', // Easing pattern to use
+            easing: 'easeInOutQuad', // Easing pattern to use
             customEasing: function (time) {}, // Function. Custom easing pattern
         
             // Callback API
@@ -31,6 +31,7 @@
             after: function () {} // Callback to run after scroll
              });
     </script>
+    <script src="js/smooth-scroll.polyfills.min.js"></script>
 
 </head>
 <body body data-spy="scroll" data-target="#menu">
@@ -93,7 +94,7 @@
 
             <div class="col-md-6 d-flex align-items-center">
 
-                <div> <h2>Desarrollo de aplicaciones móviles hibridas.</h2>
+                <div> <h2>Diseño de sitios web.</h2>
                     <p>Diseñamos tu app móvil a medida, implementando las mejores herramientas que te ayudaran a potenciar tu negocio en internet
                   sacandole el máximo partido a tu sistema único y pensado en ti.
                       
